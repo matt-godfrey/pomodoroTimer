@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ranchers&&family=Orbitron&display=swap"" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Pomodoro Timer</title>
+</head>
+<body>
+    <h3>Pomodoro Timer</h3>
+<div id="container">
+    <div id="break-timer">
+        <label id="break-label">Break Length</label>
+        <div id="break-length">
+            <button class="button" id="break-increment"><i class="fa fa-arrow-up"></i></button>
+            <div id="breakDisplay" class="interval">5</div>
+            <button class="button" id="break-decrement"><i class="fa fa-arrow-down"></i></button>
+        </div>
+    </div>
+    <div id="session-timer">
+        <label id="session-label">Session Length</label>
+        <div id="session-length">
+            <button class="button" id="session-increment"><i class="fa fa-arrow-up"></i></button>
+            <div id="sessionDisplay" class="interval">25</div>
+            <button class="button" id="session-decrement"><i class="fa fa-arrow-down"></i></button>
+        </div>
+    </div>
+    <div id="timer">
+        <label id="timer-label">Session</label>
+        <h3 id="time-left">25:00</h3>
+        <!-- <span id="minutes">25</span>:<span id="seconds">00</span> -->
+    </div>
+    <div class="break"></div>
+    <audio id="beep">
+        <source src='audio/pagerSound.mp3' type="audio/mp3">
+    </audio>
+    <div paused="true" id="start_stop">
+        <i class="fa fa-play" style="font-size:36px;"></i>
+        <i class="fa fa-pause" style="font-size:36px;"></i>
+    </div>
+    <i id="reset" class="fa fa-refresh" style="font-size:36px;"></i>
+</div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
